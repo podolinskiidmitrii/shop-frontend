@@ -1,3 +1,10 @@
+import { AppRouter } from '@/pages/AppRouter'
+import { Container } from '@mui/joy'
+
 export const App = () => {
-  return <div>App</div>
+  return (
+    <Container>
+      <AppRouter />
+    </Container>
+  )
 }
