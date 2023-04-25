@@ -4,14 +4,17 @@ import { BrowserRouter } from 'react-router-dom'
 import { App } from '@/app/App'
 import { ThemeProvider } from '@/app/theme/shopTheme'
 import { ErrorBoundary } from '@/app/providers/ErrorBoundary'
+import { StoreProvider } from '@/app/providers/StoreProvider'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <ThemeProvider>
     <ErrorBoundary>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <StoreProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </StoreProvider>
     </ErrorBoundary>
   </ThemeProvider>,
 )
