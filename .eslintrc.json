@@ -7,7 +7,7 @@
             "jsx": true
         }
     },
-    "extends":["plugin:@typescript-eslint/recommended","plugin:react/recommended"],
+    "extends":["plugin:react/recommended"],
     "plugins": [
         "react", 
         "@typescript-eslint",
