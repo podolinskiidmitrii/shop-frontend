@@ -12,5 +12,5 @@ export const App = () => {
     dispatch(userActions.initAuthData())
   }, [dispatch])
 
-  return <Container>{isInit && <AppRouter />}</Container>
+  return <>{isInit && <AppRouter />}</>
 }
