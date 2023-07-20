@@ -1,4 +1,5 @@
 import { userReducer } from '@/entities/User'
+import { mainPageReducer } from '@/pages/MainPage/model/slices/MainPageSlice'
 import {
   combineReducers,
   configureStore,
@@ -9,6 +10,7 @@ import { StateSchema } from '../types/StoreTypes'
 export function configureAppStore(initialState?: StateSchema) {
   const rootReducers: ReducersMapObject<StateSchema> = {
     user: userReducer,
+    productsPage: mainPageReducer,
   }
 
   const store = configureStore({
