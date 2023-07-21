@@ -1,7 +1,7 @@
 import { appRoutes } from '@/shared/const/router'
 import { Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { MainPage } from './MainPage/MainPage'
+import { MainPage } from './MainPage'
 
 export function AppRouter() {
   return (
